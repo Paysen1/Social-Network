@@ -19,4 +19,12 @@ const ThoughtSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Reaction',
     },],
-})
+});
+
+ThoughtSchema.virtual('reactionCount').get(function () {
+    return this.reactions.length;
+});
+
+const Thought = mongoose.model('Thought', ThoughtSchema);
+
+module.exports = Thought;
