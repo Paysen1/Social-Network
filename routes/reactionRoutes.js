@@ -4,7 +4,7 @@ const router = express.Router();
 const {
     createReaction,
     deleteReaction,
-} = require('contollerEventually');
+} = require('../controllers/reactionController');
 
 router.post('/:thoughtId/reactions', createReaction);
 router.delete('/:thoughtId/reactions/:reactionId', deleteReaction);

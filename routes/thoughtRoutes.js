@@ -7,7 +7,7 @@ const {
   createThought,
   updateThought,
   deleteThought,
-} = require('contollersEventually');
+} = require('../controllers/thoughtController');
 
 router.get('/', getAllThoughts); 
 router.get('/:thoughtId', getThoughtById); 
