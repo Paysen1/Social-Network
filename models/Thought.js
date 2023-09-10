@@ -10,7 +10,7 @@ const ThoughtSchema = new mongoose.Schema({
     },
     timeCreated: {
         type: Date,
-        defult: Date.now,
+        default: Date.now,
     },
     username: {
         type: String,

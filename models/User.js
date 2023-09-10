@@ -1,4 +1,9 @@
 const mongoose = require('mongoose')
+const reactionSchema = require('./Reaction');
+const thoughtSchema = require('./Thought');
+
+
+
 
 const userSchema = new mongoose.Schema({
     username: {
