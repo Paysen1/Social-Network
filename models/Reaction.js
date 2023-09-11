@@ -6,7 +6,7 @@ const ReactionSchema = new mongoose.Schema({
         type: String,
         required: true,
         minlength: 1,
-        maxlength: 220,
+        maxlength: 280,
     },
     username: {
         type: String,

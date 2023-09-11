@@ -6,7 +6,7 @@ const ThoughtSchema = new mongoose.Schema({
         type: String,
         requred: true,
         minlength: 1,
-        maxlength: 220
+        maxlength: 280
     },
     timeCreated: {
         type: Date,
